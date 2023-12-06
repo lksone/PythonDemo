@@ -43,5 +43,19 @@ def demo3():
     list.pop(1)
     print(list)
 
+    l1 = ['wangh', 'kongl', 'wanghjy']
+
+    l1.reverse()
+    l1.sort()
+    print(l1)
+
+
+    for name in l1:
+        print(name)
+
+    l2 = range(10)
+    for i in l2:
+        print(i)
+
 if __name__ == '__main__':
     demo3()

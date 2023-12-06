@@ -57,10 +57,72 @@ def demo3():
     print(str2[::-1])  # 654321cba
     print(str2[-3:-1])  # 45
 
-def demo4():
-    pass
+
 def demo4():
     str2 = 'abc123456'
     print(str2[2])
+
+### 常用方法String
+def demo5():
+    s1 = '   fdsfd  saa   ';
+    #去除左边空白
+    print(s1.lstrip())
+    #去除右边空白
+    print(s1.rstrip())
+
+    print(s1)
+    #去左右除空白
+    print(s1.strip())
+
+    s2 = ',,,abc,,,'
+    print(s2.strip(','))  # 去除左右指定字符
+    print(s2.lstrip(','))  # 去除左边指定字符
+    print(s2.rstrip(','))  # 去除右边指定字符
+
+    l1 = ['first', 'second', 'three']
+    print(s1.join(l1))  # 在参数列表项之间插入本字符串，若只有1项，则不插入
+    print(s1.find('b'))  # 查找字符，返回第一次找到时的索引
+    print(type(s1.find('b')))
+
+    #数据比较
+    # 字符串比较
+    print("-----------------------------字符串比较-----------------------------")
+    print('a' < 'b')  # True
+    print('ab' > 'b')  # False
+    print('ab' < 'b')
+    print('ab' > 'aa')  # True
+    print('aa' == 'aa')  # True
+
+    string_1 = "Hello"
+    string_2 = "Hello"
+
+    print("Is string_1 != string_2?")
+
+    # comapare not equality between string1 and string2,没有地址的概念
+    print(string_1 != string_2)
+    print(string_1 == string_2)
+
+    #获取字符串长度
+    print(len("1231312"))
+
+    #字符串大小
+    # 字符串转换
+    s1 = 'aBcDeF hIjKlM'
+    # 转换为大写
+    print(s1.upper())
+    # 转换为小写
+    print(s1.lower())
+    # 大小写互转
+    print(s1.swapcase())
+    # 首字母大写，其余字符转为小写
+    print(s1.capitalize())
+
+    # 字符串分割
+    s1 = 'abc,def,ghi'
+    # 按指定字符分割，返回列表
+    print(s1.split(','))
+    pass
+
+
 if __name__ == '__main__':
-    demo3()
+    demo5()
