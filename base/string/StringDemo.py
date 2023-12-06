@@ -38,21 +38,29 @@ def demo2():
     print('ll' in s1)  # True
     print('good' in s1)  # False
 
+
+#截取字符
+def demo3():
     str2 = 'abc123456'
     # 从字符串中取出指定位置的字符(下标运算)
     print(str2[2])  # c
 
     # 字符串切片(从指定的开始索引到指定的结束索引)
     print(str2[2:5])  # c12
+    #下标为2后面所有的字符
     print(str2[2:])  # c123456
+    #从第2个字符开始，每隔2个字符获取
     print(str2[2::2])  # c246
+    #每2个获取一次
     print(str2[::2])  # ac246
+    #倒序获取
     print(str2[::-1])  # 654321cba
     print(str2[-3:-1])  # 45
 
-
+def demo4():
+    pass
 def demo4():
     str2 = 'abc123456'
     print(str2[2])
 if __name__ == '__main__':
-    demo4()
+    demo3()
