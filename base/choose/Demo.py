@@ -26,3 +26,13 @@ def match4():
 
 if __name__ == '__main__':
     match4()
+    print(not True)
+    print(not not True)
+    for a in range(5):
+        print(a)
+    #[12,19);
+    for a in range(12,19):
+        print(a)
+    print("----------------------0-10，间隔2-------------------------")
+    for a in range(0,10,2):
+        print(a)
